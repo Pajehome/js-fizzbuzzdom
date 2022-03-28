@@ -11,22 +11,53 @@
 let numMax = 100;
 
 
-for(let i = 0;i <= 100;i++) {
+for(let i = 0; i <= 100; i ++) {
     console.log(i)
 
     let output = "";
-  if(i % 3 === 0){
-        output += "Flizz"
-        console.log(output)   
-  }else if(i % 5 === 0){
-        output += "Buzz"
-        console.log(output)   
-    }
-  if( i % 3 === 0 && i % 5 === 0 ) {
+
+    if ( i % 3 === 0 && i % 5 === 0 ) {
         output += "Flizz Buzz"
         console.log(output)
-    } 
 
+        const mioDiv = document.createElement("div");
+        mioDiv.innerHTML = i + " : " + "E' divisibile sia per 3 che per 5";
+        myDiv.append(mioDiv)
+        mioDiv.classList.add("color-3-5");
+
+    } else if(i % 3 === 0){
+        output += "Flizz"
+        console.log(output)
+
+        const mioDiv = document.createElement("div");
+        mioDiv.innerHTML = i + " : " + "E' divisibile solo per 3";
+        myDiv.append(mioDiv)
+        mioDiv.classList.add("color-3");
+
+    } else if (i % 5 === 0){
+        output += "Buzz"
+        console.log(output) 
+
+        const mioDiv = document.createElement("div");
+        mioDiv.innerHTML = i + " : " + "E' divisibile solo per 5";
+        myDiv.append(mioDiv)
+        mioDiv.classList.add("color-5");
+
+    }else{
+        output += "Non è divisibile ne per 3 ne per 5"
+        console.log(output)
+
+        const mioDiv = document.createElement("div");
+        mioDiv.innerHTML = i + " : " + "Non è divisibile ne per 3 ne per 5";
+        myDiv.append(mioDiv)
+        mioDiv.classList.add("color-none");
+      
+        
+        
+    } 
+   
 }
+
+
 
 

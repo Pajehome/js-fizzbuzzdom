@@ -1,0 +1,21 @@
+.color-3{
+  color: rgb(90, 90, 202);
+
+}
+.color-5{
+  color: rgb(131, 86, 86);
+}
+.color-3-5{
+  color: rgb(99, 27, 63);
+}
+.color-none{
+    font-size: 13px;
+    color: rgb(87, 86, 86);
+}
+#myDiv{
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 50px;
+    
+}
